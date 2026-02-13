@@ -1,112 +1,306 @@
-# 👋 Hi, I'm Md Mohibbur Rahman
+# 🚀 ERP System
 
-## 🌍 Remote Full-Stack Engineer (Laravel • React • Next.js • MySQL • DevOps)
+### Modern Laravel-Based Business Management Platform
 
-I build scalable, production-grade applications with strong backend architecture, optimized databases, and infrastructure-aware deployment strategies.
-
-Open to **US / EU remote engineering opportunities**.
+> A secure, scalable, automation-driven ERP system built with Laravel — designed for service businesses.
 
 ---
 
-# 🚀 Tech Stack
+# ✨ Overview
 
-### Backend
+This ERP system centralizes business operations including CRM, Delivery, Finance, Renewals, Attendance, and Owner Insights — all in one secure platform.
 
-* Laravel
-* PHP (OOP & Clean Architecture)
-* REST API Development
-* Queue & Scheduler Systems
-* Redis Caching
+Built with:
 
-### Frontend
-
-* React
-* Next.js (SSR / App Router)
-* TypeScript
-* Tailwind CSS
-
-### Database
-
-* MySQL
-* PostgreSQL
-* Query Optimization & Index Strategy
-
-### DevOps & Infrastructure
-
-* Linux Servers
-* Nginx / OpenLiteSpeed
-* Docker (Basics)
-* VPS Deployment
-* Supervisor & Queue Workers
-* Production Optimization
+* Clean Laravel Architecture
+* Strong Business Rule Enforcement
+* Performance Optimization
+* Security-First Design
+* Automation-Driven Workflow
 
 ---
 
-# ⚡ What I Build
+# 🏗️ Tech Stack
 
-✔ ERP & Automation Systems
-✔ SaaS Platforms
-✔ CRM Applications
-✔ REST API Architectures
-✔ Full-Stack Laravel + React Systems
-✔ Infrastructure-Aware Backends
-
----
-
-# 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=CoderMohibbur&show_icons=true&theme=tokyonight&hide_border=true" height="170" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=CoderMohibbur&layout=compact&theme=tokyonight&hide_border=true" height="170" />
-</p>
+| Layer          | Technology                 |
+| -------------- | -------------------------- |
+| Backend        | Laravel                    |
+| Authentication | Jetstream + Fortify        |
+| Authorization  | Spatie Permission          |
+| UI             | Blade + Tailwind CSS       |
+| Queue          | Database Driver            |
+| Cache          | Database / Redis Supported |
+| Scheduler      | Laravel Task Scheduling    |
+| Database       | MySQL / MariaDB            |
+| Notifications  | Laravel Notifications      |
 
 ---
 
-# 🔥 GitHub Streak
+# 📦 Core Modules
 
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=CoderMohibbur&theme=tokyonight&hide_border=true" />
-</p>
+## 🧲 CRM
+
+* Leads Management
+* Deal Pipeline
+* Activities & Follow-ups
+* Client Management
+* Client Contacts & Notes
+
+## 📋 Delivery
+
+* Projects
+* Task Board
+* Task Templates
+* Time Logs (Single Running Timer Enforced)
+* Project Notes & Files
+
+## 💰 Finance
+
+* Invoices
+* Invoice Items
+* Payments (Auto Status Sync: unpaid → partial → paid)
+* Tax Rules
+* Expenses
+* Terms & Conditions
+
+## 🔄 Renewals
+
+* Service Management
+* Renewal Due Automation
+* Invoice Generation for Renewals
+* Renewal History Tracking
+
+## 🕒 Attendance
+
+* Attendance Records
+* Present / Late / Leave / Absent Tracking
+* Office Timing Configuration
+* Device & Location Logging
+
+## 📊 Owner Dashboard
+
+* Revenue Overview
+* Pending Invoices
+* Due Renewals
+* Follow-up Insights
+* Performance Summary
 
 ---
 
-# 🐍 Contribution Graph (Snake Animation)
+# 🤖 Automation System
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/CoderMohibbur/CoderMohibbur/output/github-contribution-grid-snake.svg" />
-</p>
+## Daily Reminder Command
 
----
+```
+php artisan erp:daily-reminders
+```
 
-# 🧩 Technologies & Tools
+Handles:
 
-<p align="center">
-<img src="https://skillicons.dev/icons?i=php,laravel,react,nextjs,ts,js,nodejs,express,mysql,postgres,redis,docker,nginx,linux,aws,git,postman,tailwind" />
-</p>
+* Renewal Due Reminders
+* Invoice Due Reminders
+* Follow-up Reminders
 
----
+Supports:
 
-# 🌐 Portfolio
+```
+--dry-run
+```
 
-🔗 [https://mohib.dev/](https://mohib.dev/)
-
----
-
-# 🤝 Connect With Me
-
-<p align="center">
-<a href="https://github.com/CoderMohibbur" target="_blank">
-<img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" height="30" width="40" />
-</a>
-<a href="https://linkedin.com/in/mohibbur-rahman-milon" target="_blank">
-<img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" height="30" width="40" />
-</a>
-</p>
+Uses cache locking to prevent duplicate execution.
 
 ---
 
-# 🎯 Engineering Philosophy
+# 🔐 Security Architecture
 
-> Build systems that scale — not just code that runs.
+* Form Request Validation
+* Permission-Based Authorization
+* Soft Deletes Enabled
+* Indexed Status Fields
+* CSRF Protection
+* Mass Assignment Protection
+* Secure Password Hashing
+* Two-Factor Authentication Ready
 
-Scalable • Secure • Performant • Maintainable • Production-Ready
+---
+
+# 🧠 Business Rules Enforced
+
+✔ Deal Won → Client + Project + Default Tasks + Optional Advance Invoice
+
+✔ Payments Auto Update Invoice Status
+
+✔ Only One Running Timer Per User
+
+✔ Renewal System Driven by `next_renewal_at`
+
+✔ Reminder Logs Prevent Duplicate Notifications
+
+---
+
+# 📂 Project Structure
+
+```
+app/
+ ├── Models
+ ├── Http/
+ │    ├── Controllers
+ │    ├── Requests
+ ├── Console/Commands
+ ├── Notifications
+
+database/
+ ├── migrations
+ ├── seeders
+
+resources/views/
+ ├── crm
+ ├── delivery
+ ├── finance
+ ├── renewals
+ ├── attendance
+```
+
+Follows Laravel Best Practices:
+
+* Route Model Binding
+* Transaction Safety
+* Clean Controllers
+* Eager Loading to Prevent N+1
+* Indexed Foreign Keys
+
+---
+
+# ⚙️ Installation
+
+## 1️⃣ Clone Repository
+
+```
+git clone https://github.com/your-repo/erp.git
+cd erp
+```
+
+## 2️⃣ Install Dependencies
+
+```
+composer install
+npm install && npm run build
+```
+
+## 3️⃣ Environment Setup
+
+```
+cp .env.example .env
+php artisan key:generate
+```
+
+Configure database inside `.env`.
+
+## 4️⃣ Run Migrations & Seeders
+
+```
+php artisan migrate --seed
+```
+
+## 5️⃣ Storage Link
+
+```
+php artisan storage:link
+```
+
+## 6️⃣ Start Server
+
+```
+php artisan serve
+```
+
+---
+
+# ⏰ Scheduler Setup (Production)
+
+Add this to your server crontab:
+
+```
+* * * * * php /path-to-project/artisan schedule:run >> /dev/null 2>&1
+```
+
+---
+
+# 🚀 Production Optimization
+
+Before going live:
+
+```
+php artisan config:cache
+php artisan route:cache
+php artisan view:cache
+```
+
+Recommended:
+
+* Enable OPcache
+* Use Redis for cache
+* Use Supervisor for queues
+* Disable APP_DEBUG
+* Enable HTTPS
+
+---
+
+# 🧪 QA Checklist
+
+* [ ] Lead Follow-up Sync Working
+* [ ] Invoice Partial → Paid Status Transition
+* [ ] Renewal Due Reminder Triggering
+* [ ] Timer Stop Calculates Accurate Seconds
+* [ ] Role-Based Access Restriction Working
+* [ ] Attendance Late Calculation Valid
+
+---
+
+# 🌍 Environment Configuration (Important)
+
+```
+APP_ENV=production
+APP_DEBUG=false
+QUEUE_CONNECTION=database
+CACHE_STORE=database
+SESSION_DRIVER=database
+```
+
+---
+
+# 🛡️ Production Hardening
+
+* Use HTTPS Only
+* Protect Sensitive Routes with Middleware
+* Configure Proper File Permissions
+* Monitor Failed Jobs Table
+* Enable Rate Limiting
+
+---
+
+# 🌟 Why This ERP?
+
+✔ Clean & Scalable Architecture
+✔ Modular Design
+✔ Automation-Driven
+✔ Business Rule Enforced
+✔ Secure by Design
+✔ Production Ready
+
+---
+
+# 📄 License
+
+Private Business ERP System
+All Rights Reserved.
+
+---
+
+# 👨‍💻 Maintained By
+
+Japan Bangladesh IT
+
+---
+
+> Designed for modern service businesses who value structure, automation, and control.
