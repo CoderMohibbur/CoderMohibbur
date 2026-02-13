@@ -1,306 +1,155 @@
-# 🚀 ERP System
+# 👋 Hi, I'm Md Mohibbur Rahman
 
-### Modern Laravel-Based Business Management Platform
+## 🚀 Senior Full-Stack Engineer
 
-> A secure, scalable, automation-driven ERP system built with Laravel — designed for service businesses.
+### Laravel • React • Next.js • MySQL • DevOps
 
----
+I architect and build **production-grade web applications** with a strong focus on scalability, performance, security, and long-term maintainability.
 
-# ✨ Overview
-
-This ERP system centralizes business operations including CRM, Delivery, Finance, Renewals, Attendance, and Owner Insights — all in one secure platform.
-
-Built with:
-
-* Clean Laravel Architecture
-* Strong Business Rule Enforcement
-* Performance Optimization
-* Security-First Design
-* Automation-Driven Workflow
+My expertise lies in combining **robust Laravel backends**, **modern React/Next.js frontends**, **optimized relational databases**, and **infrastructure-aware DevOps practices** to deliver stable and scalable systems ready for real-world production.
 
 ---
 
-# 🏗️ Tech Stack
+# 🧠 Professional Summary
 
-| Layer          | Technology                 |
-| -------------- | -------------------------- |
-| Backend        | Laravel                    |
-| Authentication | Jetstream + Fortify        |
-| Authorization  | Spatie Permission          |
-| UI             | Blade + Tailwind CSS       |
-| Queue          | Database Driver            |
-| Cache          | Database / Redis Supported |
-| Scheduler      | Laravel Task Scheduling    |
-| Database       | MySQL / MariaDB            |
-| Notifications  | Laravel Notifications      |
+* 🔭 Building **enterprise-ready Laravel applications, ERP systems, SaaS platforms, and REST API infrastructures**.
+* ⚛️ Developing **modern frontend systems with React & Next.js (SSR, App Router, API integration)**.
+* 🗄 Designing optimized **MySQL/PostgreSQL database architectures** with strong indexing and integrity strategies.
+* ⚙️ Implementing **DevOps-driven deployment pipelines** for stable production environments.
+* 📈 Focused on performance tuning, query optimization, and system stability under load.
 
 ---
 
-# 📦 Core Modules
+# 🏗 Core Technical Expertise
 
-## 🧲 CRM
+## ⚙️ Backend Engineering (Laravel & PHP)
 
-* Leads Management
-* Deal Pipeline
-* Activities & Follow-ups
-* Client Management
-* Client Contacts & Notes
+* Advanced Laravel Architecture & Modular Structure
+* RESTful API Design & Integration
+* Authentication & Authorization Systems (JWT, Sanctum, Permissions)
+* Business Logic Enforcement & Automation
+* Queue Systems & Background Processing
+* Scheduler & Command Automation
+* Clean Code & Maintainable Design Patterns
+* Caching Strategies (Redis / Database)
 
-## 📋 Delivery
+## ⚛️ Frontend Engineering (React & Next.js)
 
-* Projects
-* Task Board
-* Task Templates
-* Time Logs (Single Running Timer Enforced)
-* Project Notes & Files
+* Component-Driven Architecture
+* Server-Side Rendering (SSR)
+* API-first Integration with Laravel
+* TypeScript-based Development
+* State Management Patterns
+* Performance Optimization & Code Splitting
+* Tailwind CSS & Modern UI Systems
 
-## 💰 Finance
+## 🗄 Database Engineering
 
-* Invoices
-* Invoice Items
-* Payments (Auto Status Sync: unpaid → partial → paid)
-* Tax Rules
-* Expenses
-* Terms & Conditions
+* MySQL & PostgreSQL Optimization
+* Schema Design & Migration Planning
+* Index Strategy & Query Profiling
+* Transaction Safety & Data Integrity
+* Large Dataset Handling
+* Performance Bottleneck Analysis
 
-## 🔄 Renewals
+## 🔄 DevOps & Infrastructure
 
-* Service Management
-* Renewal Due Automation
-* Invoice Generation for Renewals
-* Renewal History Tracking
-
-## 🕒 Attendance
-
-* Attendance Records
-* Present / Late / Leave / Absent Tracking
-* Office Timing Configuration
-* Device & Location Logging
-
-## 📊 Owner Dashboard
-
-* Revenue Overview
-* Pending Invoices
-* Due Renewals
-* Follow-up Insights
-* Performance Summary
+* Linux Server Administration
+* Nginx & OpenLiteSpeed Configuration
+* Docker & Containerization Basics
+* CI/CD Workflow Understanding
+* VPS & Dedicated Server Deployment
+* Redis Setup & Optimization
+* Supervisor & Queue Workers Management
+* Production Monitoring & Stability Optimization
 
 ---
 
-# 🤖 Automation System
+# 🚀 What I Build
 
-## Daily Reminder Command
-
-```
-php artisan erp:daily-reminders
-```
-
-Handles:
-
-* Renewal Due Reminders
-* Invoice Due Reminders
-* Follow-up Reminders
-
-Supports:
-
-```
---dry-run
-```
-
-Uses cache locking to prevent duplicate execution.
+✔ ERP & Business Automation Systems
+✔ SaaS Platforms
+✔ CRM Systems
+✔ REST API Architectures
+✔ Full-Stack Laravel + React Applications
+✔ High-Performance Admin Panels
+✔ Infrastructure-Aware Backend Systems
 
 ---
 
-# 🔐 Security Architecture
+# ⚡ Engineering Principles
 
-* Form Request Validation
-* Permission-Based Authorization
-* Soft Deletes Enabled
-* Indexed Status Fields
-* CSRF Protection
-* Mass Assignment Protection
-* Secure Password Hashing
-* Two-Factor Authentication Ready
+I build systems that are:
 
----
+> Scalable • Secure • Performant • Maintainable • Production-Ready
 
-# 🧠 Business Rules Enforced
+### My Development Priorities
 
-✔ Deal Won → Client + Project + Default Tasks + Optional Advance Invoice
-
-✔ Payments Auto Update Invoice Status
-
-✔ Only One Running Timer Per User
-
-✔ Renewal System Driven by `next_renewal_at`
-
-✔ Reminder Logs Prevent Duplicate Notifications
+* Clear separation of concerns
+* Database-first architecture thinking
+* Predictable system behavior
+* Strong validation & data integrity
+* Infrastructure-aware development
+* Long-term maintainability over shortcuts
 
 ---
 
-# 📂 Project Structure
+# 🧩 Technologies & Tools
 
-```
-app/
- ├── Models
- ├── Http/
- │    ├── Controllers
- │    ├── Requests
- ├── Console/Commands
- ├── Notifications
-
-database/
- ├── migrations
- ├── seeders
-
-resources/views/
- ├── crm
- ├── delivery
- ├── finance
- ├── renewals
- ├── attendance
-```
-
-Follows Laravel Best Practices:
-
-* Route Model Binding
-* Transaction Safety
-* Clean Controllers
-* Eager Loading to Prevent N+1
-* Indexed Foreign Keys
+<p align="left">
+<img src="https://skillicons.dev/icons?i=php,laravel,react,nextjs,ts,js,nodejs,express,mysql,postgres,redis,docker,nginx,linux,aws,git,postman,tailwind" />
+</p>
 
 ---
 
-# ⚙️ Installation
+# 🌍 Deployment & Production Experience
 
-## 1️⃣ Clone Repository
-
-```
-git clone https://github.com/your-repo/erp.git
-cd erp
-```
-
-## 2️⃣ Install Dependencies
-
-```
-composer install
-npm install && npm run build
-```
-
-## 3️⃣ Environment Setup
-
-```
-cp .env.example .env
-php artisan key:generate
-```
-
-Configure database inside `.env`.
-
-## 4️⃣ Run Migrations & Seeders
-
-```
-php artisan migrate --seed
-```
-
-## 5️⃣ Storage Link
-
-```
-php artisan storage:link
-```
-
-## 6️⃣ Start Server
-
-```
-php artisan serve
-```
+* End-to-end VPS & Cloud Deployment
+* CyberPanel & Hosting Optimization
+* Database Performance Tuning
+* Live Production Debugging
+* System Hardening & Security Best Practices
+* Automated Backup & Recovery Planning
 
 ---
 
-# ⏰ Scheduler Setup (Production)
+# 📊 Engineering Focus Areas
 
-Add this to your server crontab:
-
-```
-* * * * * php /path-to-project/artisan schedule:run >> /dev/null 2>&1
-```
-
----
-
-# 🚀 Production Optimization
-
-Before going live:
-
-```
-php artisan config:cache
-php artisan route:cache
-php artisan view:cache
-```
-
-Recommended:
-
-* Enable OPcache
-* Use Redis for cache
-* Use Supervisor for queues
-* Disable APP_DEBUG
-* Enable HTTPS
+* System Design & Scalability
+* High-Availability Backend Systems
+* API Performance Optimization
+* Query Efficiency & Index Strategy
+* Server-Level Optimization
+* ERP & Automation Architecture
 
 ---
 
-# 🧪 QA Checklist
+# 🌐 Portfolio
 
-* [ ] Lead Follow-up Sync Working
-* [ ] Invoice Partial → Paid Status Transition
-* [ ] Renewal Due Reminder Triggering
-* [ ] Timer Stop Calculates Accurate Seconds
-* [ ] Role-Based Access Restriction Working
-* [ ] Attendance Late Calculation Valid
+🔗 [https://mohib.dev/](https://mohib.dev/)
 
 ---
 
-# 🌍 Environment Configuration (Important)
+# 🤝 Connect With Me
 
-```
-APP_ENV=production
-APP_DEBUG=false
-QUEUE_CONNECTION=database
-CACHE_STORE=database
-SESSION_DRIVER=database
-```
-
----
-
-# 🛡️ Production Hardening
-
-* Use HTTPS Only
-* Protect Sensitive Routes with Middleware
-* Configure Proper File Permissions
-* Monitor Failed Jobs Table
-* Enable Rate Limiting
+<p align="left">
+<a href="https://github.com/CoderMohibbur" target="_blank">
+<img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" height="30" width="40" />
+</a>
+<a href="https://linkedin.com/in/mohibbur-rahman-milon" target="_blank">
+<img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" height="30" width="40" />
+</a>
+<a href="https://fb.com/mohibburrahmanmilon" target="_blank">
+<img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" height="30" width="40" />
+</a>
+</p>
 
 ---
 
-# 🌟 Why This ERP?
+# 🎯 Long-Term Vision
 
-✔ Clean & Scalable Architecture
-✔ Modular Design
-✔ Automation-Driven
-✔ Business Rule Enforced
-✔ Secure by Design
-✔ Production Ready
+To become a globally recognized backend and system design engineer capable of architecting large-scale, high-availability platforms with strong architectural foundations and operational resilience.
 
 ---
 
-# 📄 License
-
-Private Business ERP System
-All Rights Reserved.
-
----
-
-# 👨‍💻 Maintained By
-
-Japan Bangladesh IT
-
----
-
-> Designed for modern service businesses who value structure, automation, and control.
+> "Great software is not just written — it is architected for scale, performance, and longevity."
